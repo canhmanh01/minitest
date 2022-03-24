@@ -1,0 +1,19 @@
+package fis.java.minitest;
+
+public class Main {
+
+	
+	public static void hienthi() {
+		while (true) {
+			
+			
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

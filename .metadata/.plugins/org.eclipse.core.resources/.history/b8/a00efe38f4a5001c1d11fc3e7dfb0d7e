@@ -1,0 +1,16 @@
+package fis.java.minitest;
+
+import java.util.Date;
+
+public class Transaction {
+	
+	
+private Long id;
+private Date transactionDate;
+private Number fromAcount , toAccount;
+private Double amount;
+private int status;
+private String content , errorReason;
+
+
+}

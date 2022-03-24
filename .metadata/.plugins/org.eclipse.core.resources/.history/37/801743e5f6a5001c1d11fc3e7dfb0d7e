@@ -1,0 +1,41 @@
+package fis.java.minitest;
+
+import java.util.Scanner;
+
+public class Main {
+
+	
+	public static void hienthi() {
+		System.out.println("======Hệ thống Quản Lý Tài Khoản=========");
+		System.out.println("1.Danh sach tai khoan");
+		System.out.println("2.them moi tai khoan");
+		System.out.println("3.cập nhật thông tin tài khoản ");
+		System.out.println("4.xoa tài khoản");
+		System.out.println("5.chuyển khoản ");
+		System.out.println("6.Exit");
+		System.out.println("----------------");
+		System.out.println("Chọn...");
+		
+		
+	}
+	private static void addname() {
+		Scanner sc = new Scanner(System.in);
+		Account ac = new Account();
+		
+		System.out.println("Ten Tai Khoan");
+		
+		System.out.println("So Tai Khoan");
+		System.out.println("So Du");
+		System.out.println("Trang thai");
+		
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		hienthi();
+		// TODO Auto-generated method stub
+
+	}
+
+}

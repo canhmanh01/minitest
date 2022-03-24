@@ -1,0 +1,23 @@
+package fis.java.minitest;
+
+public class Main {
+
+	
+	public static void hienthi() {
+		System.out.println("======Hệ thống Quản Lý Tài Khoản=========");
+		System.out.println("1.Danh sach tai khoan");
+		System.out.println("2.them moi tai khoan");
+		System.out.println("3.cập nhật thông tin tài khoản ");
+		System.out.println("4.xoa tài khoản");
+		System.out.println("5.chuyển khoản ");
+		System.out.println("======Hệ thống Quản Lý Tài Khoản");
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

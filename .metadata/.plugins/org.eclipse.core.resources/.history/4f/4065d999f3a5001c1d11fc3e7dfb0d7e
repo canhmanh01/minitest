@@ -1,0 +1,12 @@
+package fis.java.minitest;
+
+public class Account {
+
+	private Long id;
+	private String accountNumber;
+	private String accountName;
+	private Double balance;
+	private int status;
+	
+	
+}

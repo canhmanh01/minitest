@@ -1,0 +1,128 @@
+package fis.java.minitest;
+
+import java.util.List;
+import java.util.Scanner;
+
+import javax.security.auth.login.AccountLockedException;
+
+public class Main {
+	private static Scanner sc = new Scanner(System.in);
+	private static List<Account> acountList;
+	
+	public static void hienthi() {
+		System.out.println("======Hệ thống Quản Lý Tài Khoản=========");
+		System.out.println("1.Danh sach tai khoan");
+		System.out.println("2.them moi tai khoan");
+		System.out.println("3.cập nhật thông tin tài khoản ");
+		System.out.println("4.xoa tài khoản");
+		System.out.println("5.chuyển khoản ");
+		System.out.println("6.Exit");
+		System.out.println("----------------");
+		System.out.println("Chọn...");
+		
+		
+	}
+	
+	 public int inputId() {
+	        System.out.print("Input student id: ");
+	        while (true) {
+	            try {
+	                int id = Integer.parseInt((sc.nextLine()));
+	                return id;
+	            } catch (NumberFormatException ex) {
+	                System.out.print("invalid! Input student id again: ");
+	            }
+	        }
+	    }
+	private static String inputaccountName() {
+		System.out.println("ten tai khoan :");
+		return sc.nextLine();
+	}
+	private static String accountNumber() {
+		System.out.println("so tai khoan :");
+		return sc.nextLine();
+	}
+	private static Double inputbalace() {
+		System.out.println("so du :");
+		return sc.nextDouble();
+	}
+	private static int inputstatus() {
+		System.out.println("trang thai :");
+		if (inputbalace()>1000) {
+			System.out.println("hieu luc");
+		} else {
+			System.out.println("khong hieu luc");
+		}
+		return sc.nextInt();
+	}
+	
+	private static void addname() {
+		
+	
+//		Account ac = new Account();
+//		
+//		System.out.println("Ten Tai Khoan");
+//		
+//		System.out.println("So Tai Khoan");
+//		System.out.println("So Du");
+//		System.out.println("Trang thai");
+		Long id = (long) ((acountList.size() > 0) ? (acountList.size() + 1 ) :1);
+		System.out.println("id = " +id);
+		String accountName = inputaccountName();
+		String accountNumber = inputaccountName();
+		 Double balance =inputbalace();
+		 int inputstatus = inputstatus();
+		Account ac = new Account(id, accountNumber, accountName, balance, inputstatus);
+		acountList.add(ac);
+		
+	}
+	
+
+
+
+	public static void main(String[] args) {
+		 Scanner scanner = new Scanner(System.in);
+		hienthi();
+		String choose = null;
+        boolean exit = false;
+	
+		 while (true) {
+			 choose = scanner.nextLine();
+				switch (choose) {
+	            case "1":
+	            	addname();
+	                break;
+	            case "2":
+	           
+	                break;
+	            case "3":
+	             
+	                break;
+	            case "4":
+	                break;
+	            case "5":
+	              
+	                break;
+	            case "6":
+	            	 System.out.println("exited!");
+	            	 exit = true;
+	            default:
+	                System.out.println("invalid! please choose action in below menu:");
+	                break;
+	            }
+	            if (exit) {
+	                break;
+	            }
+	               
+	                break;
+	         
+	            }
+	         
+	            // show menu
+	           
+	        }
+	    }
+
+	}
+
+
